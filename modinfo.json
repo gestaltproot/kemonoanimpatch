@@ -4,7 +4,7 @@
   "name": "Kemono Animation Patch",
   "description" : "Kemono Animation Patch",
   "authors": ["gestaltproot"],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": { 
 	"kemono": "0.1.17"
   },
