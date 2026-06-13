@@ -1,0 +1,1 @@
+- b_ArmUpperL is gimball locked if yRot = 90
