@@ -1,0 +1,12 @@
+{
+  "type": "content",
+  "modid": "kemonoanimpatch",
+  "name": "Kemono Animation Patch",
+  "description" : "Kemono Animation Patch",
+  "authors": ["gestaltproot"],
+  "version": "1.0.0",
+  "dependencies": { 
+	"kemono": "0.1.17"
+  },
+  "website": "https://mods.vintagestory.at/show/user/624933F707B327F2E0DF"
+}
