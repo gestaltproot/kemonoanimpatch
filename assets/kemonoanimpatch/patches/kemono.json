@@ -1311,22 +1311,6 @@
                     {
                         "frame": 0,
                         "elements": {
-                            "b_TorsoLower": {
-                                "offsetX": 0.0,
-                                "offsetY": 0.0,
-                                "offsetZ": 0.0,
-                                "rotationX": -0.0,
-                                "rotationY": -2.0,
-                                "rotationZ": -1.0
-                            },
-                            "b_TorsoUpper": {
-                                "offsetX": 0.0,
-                                "offsetY": 0.0,
-                                "offsetZ": 0.0,
-                                "rotationX": -3.0,
-                                "rotationY": -17.0,
-                                "rotationZ": 0.0
-                            },
                             "b_ArmUpperR": {
                                 "offsetX": -0.5,
                                 "offsetY": -0.3,
@@ -1359,46 +1343,6 @@
                                 "rotationY": 11.0,
                                 "rotationZ": 0.0
                             },
-                            "b_Head": {
-                                "offsetX": 0.0,
-                                "offsetY": 0.0,
-                                "offsetZ": 0.0,
-                                "rotationX": 2.0,
-                                "rotationY": -3.0,
-                                "rotationZ": 1.0
-                            },
-                            "b_FootUpperL": {
-                                "offsetX": 0.0,
-                                "offsetY": 0.0,
-                                "offsetZ": 0.0,
-                                "rotationX": -2.0,
-                                "rotationY": -2.0,
-                                "rotationZ": 0.0
-                            },
-                            "b_FootLowerL": {
-                                "offsetX": 0.0,
-                                "offsetY": 0.0,
-                                "offsetZ": 0.0,
-                                "rotationX": -0.0,
-                                "rotationY": -2.0,
-                                "rotationZ": 0.0
-                            },
-                            "b_FootUpperR": {
-                                "offsetX": 0.0,
-                                "offsetY": 0.0,
-                                "offsetZ": 0.0,
-                                "rotationX": -0.0,
-                                "rotationY": 5.0,
-                                "rotationZ": 2.0
-                            },
-                            "b_FootLowerR": {
-                                "offsetX": 0.0,
-                                "offsetY": 0.0,
-                                "offsetZ": 0.0,
-                                "rotationX": -0.0,
-                                "rotationY": -6.0,
-                                "rotationZ": 0.0
-                            },
                             "b_ItemAnchor": {
                                 "rotationX": -0.0,
                                 "rotationY": -91.0,
@@ -1418,22 +1362,6 @@
                     {
                         "frame": 0,
                         "elements": {
-                            "b_TorsoLower": {
-                                "offsetX": 0.0,
-                                "offsetY": 0.0,
-                                "offsetZ": 0.0,
-                                "rotationX": -0.0,
-                                "rotationY": -2.0,
-                                "rotationZ": -1.0
-                            },
-                            "b_TorsoUpper": {
-                                "offsetX": -4.0,
-                                "offsetY": 0.0,
-                                "offsetZ": 0.0,
-                                "rotationX": -3.0,
-                                "rotationY": -17.0,
-                                "rotationZ": 0.0
-                            },
                             "b_ArmUpperR": {
                                 "offsetX": 3.5,
                                 "offsetY": 3.7,
@@ -1464,46 +1392,6 @@
                                 "offsetZ": 0.0,
                                 "rotationX": -0.0,
                                 "rotationY": 11.0,
-                                "rotationZ": 0.0
-                            },
-                            "b_Head": {
-                                "offsetX": 0.0,
-                                "offsetY": 0.0,
-                                "offsetZ": 0.0,
-                                "rotationX": 2.0,
-                                "rotationY": -3.0,
-                                "rotationZ": 1.0
-                            },
-                            "b_FootUpperL": {
-                                "offsetX": 0.0,
-                                "offsetY": 0.0,
-                                "offsetZ": 0.0,
-                                "rotationX": -2.0,
-                                "rotationY": -2.0,
-                                "rotationZ": 0.0
-                            },
-                            "b_FootLowerL": {
-                                "offsetX": 0.0,
-                                "offsetY": 0.0,
-                                "offsetZ": 0.0,
-                                "rotationX": -0.0,
-                                "rotationY": -2.0,
-                                "rotationZ": 0.0
-                            },
-                            "b_FootUpperR": {
-                                "offsetX": 0.0,
-                                "offsetY": 0.0,
-                                "offsetZ": 0.0,
-                                "rotationX": -0.0,
-                                "rotationY": 5.0,
-                                "rotationZ": 2.0
-                            },
-                            "b_FootLowerR": {
-                                "offsetX": 0.0,
-                                "offsetY": 0.0,
-                                "offsetZ": 0.0,
-                                "rotationX": -0.0,
-                                "rotationY": -6.0,
                                 "rotationZ": 0.0
                             },
                             "b_ItemAnchor": {
@@ -1589,7 +1477,7 @@
                                 "rotationY": 30.0,
                                 "rotationZ": -15.0
                             },
-                            "Neck": {
+                            "b_Neck": {
                                 "rotationX": -0.0,
                                 "rotationY": -13.0,
                                 "rotationZ": 0.0
@@ -1884,7 +1772,7 @@
                                 "rotationY": 30.0,
                                 "rotationZ": -15.0
                             },
-                            "Neck": {
+                            "b_Neck": {
                                 "rotationX": -0.0,
                                 "rotationY": -13.0,
                                 "rotationZ": 0.0
