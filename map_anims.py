@@ -328,8 +328,8 @@ def main():
     # rewrite data into a patch format
     patch = {
         "file": "kemono:animations/kemono0_animations.json",
-        "op": "replace",
-        "path": "/animations",
+        "op": "addeach",
+        "path": "/animations/-",
         "value": data.get("animations", [])
     }
 
