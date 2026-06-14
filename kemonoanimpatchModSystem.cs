@@ -24,17 +24,7 @@ namespace kemonoanimpatch
             // Apply all Harmony patches in this assembly
             harmony.PatchAll();
 
-            Mod.Logger.Notification("Hello from template mod: " + api.Side);
-        }
-
-        public override void StartServerSide(ICoreServerAPI api)
-        {
-            Mod.Logger.Notification("Hello from template mod server side: " + Lang.Get("kemonoanimpatch:hello"));
-        }
-
-        public override void StartClientSide(ICoreClientAPI api)
-        {
-            Mod.Logger.Notification("Hello from template mod client side: " + Lang.Get("kemonoanimpatch:hello"));
+            Mod.Logger.Notification("Started Kemono Animation Patch");
         }
 
 
@@ -48,19 +38,10 @@ namespace kemonoanimpatch
 
 
     }
-    //[HarmonyPatch(typeof(kemono.KemonoPlayerHeadController))]
-    //[HarmonyPatch(MethodType.Constructor)]
-    //public class KemonoPlayerHeadControllerPatch
-    //{
-    //    public static bool Prefix(IAnimationManager animator, EntityPlayer entity, Shape entityShape, string head, string neck, ref string torsoUpper, ref string torsoLower, string footUpperL, string footUpperR, EnumAxis bodyForwardAxis, float bodyYawInterpolateThreshold, float bodyYawInterpolateSpeedBase, float bodyYawInterpolateSpeedDistMultiplier)
-    //    {
-    //        torsoUpper = "UpperTorso";
-    //        torsoLower = "LowerTorso";
-    //        return true;
-    //    }
 
-    //}
-
+    /// <summary>
+    /// Reimplements the OnFrame method for the KemonoPlayerHeadController class to fix a NullReferenceException when the torso bones are not named as xeth expected
+    /// </summary>
     [HarmonyPatch(typeof(kemono.KemonoPlayerHeadController), "OnFrame")]
     public class KemonoPlayerHeadControllerOnFramePatch
     {
