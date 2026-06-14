@@ -10,6 +10,7 @@ using Vintagestory.API.Common;
 using Vintagestory.API.Config;
 using Vintagestory.API.Server;
 using Vintagestory.API.MathTools;
+using System;
 
 namespace kemonoanimpatch
 {
@@ -35,13 +36,34 @@ namespace kemonoanimpatch
             harmony.UnpatchAll("kemonoanimpatch");
         }
 
-
-
     }
 
-    /// <summary>
-    /// Reimplements the OnFrame method for the KemonoPlayerHeadController class to fix a NullReferenceException when the torso bones are not named as xeth expected
-    /// </summary>
+
+
+    [HarmonyPatch(typeof(kemono.KemonoPlayerHeadController))]
+    [HarmonyPatch(MethodType.Constructor)]
+    [HarmonyPatch(new Type[] {typeof(IAnimationManager), typeof(EntityPlayer), typeof(Shape), typeof(string), typeof(string), typeof(string), typeof(string), typeof(string), typeof(string), typeof(EnumAxis), typeof(float), typeof(float), typeof(float)} )]
+    public class KemonoPlayerHeadControllerConstructorPatch
+    {
+        public static void Postfix(kemono.KemonoPlayerHeadController __instance)
+        {
+            // Get necessary fields and properties via reflection
+            var animatorField = typeof(kemono.KemonoPlayerHeadController).BaseType?.GetField("animator", BindingFlags.NonPublic | BindingFlags.Instance);
+            var upperTorsoPoseField = typeof(kemono.KemonoPlayerHeadController).GetField("UpperTorsoPose", BindingFlags.NonPublic | BindingFlags.Instance);
+            var lowerTorsoPoseField = typeof(kemono.KemonoPlayerHeadController).GetField("LowerTorsoPose", BindingFlags.NonPublic | BindingFlags.Instance);
+
+            var animator = animatorField?.GetValue(__instance);
+            var animatorAnimator = animator?.GetType().GetProperty("Animator", BindingFlags.Public | BindingFlags.Instance)?.GetValue(animator);
+
+            // Re-query the poses with the new bone names
+            var upperTorsoPose = animatorAnimator?.GetType().GetMethod("GetPosebyName")?.Invoke(animatorAnimator, new object[] { "UpperTorso" });
+            var lowerTorsoPose = animatorAnimator?.GetType().GetMethod("GetPosebyName")?.Invoke(animatorAnimator, new object[] { "LowerTorso" });
+
+            upperTorsoPoseField?.SetValue(__instance, upperTorsoPose);
+            lowerTorsoPoseField?.SetValue(__instance, lowerTorsoPose);
+        }
+    }
+
     [HarmonyPatch(typeof(kemono.KemonoPlayerHeadController), "OnFrame")]
     public class KemonoPlayerHeadControllerOnFramePatch
     {
@@ -132,4 +154,23 @@ namespace kemonoanimpatch
             return false;
         }
     }
+
+    [HarmonyPatch(typeof(kemono.KemonoSkinnableModel), "Initialize")]
+    public class KemonoSkinnableModelInitializePatch
+    {
+        public static bool prefix(kemono.KemonoSkinnableModel __instance)
+        {
+            // Get the properties via reflection
+            var jointTorsoUpperProperty = typeof(kemono.KemonoSkinnableModel).GetProperty("JointTorsoUpper", BindingFlags.Public | BindingFlags.Instance);
+            var jointTorsoLowerProperty = typeof(kemono.KemonoSkinnableModel).GetProperty("JointTorsoLower", BindingFlags.Public | BindingFlags.Instance);
+
+            // Set the new bone names
+            jointTorsoUpperProperty?.SetValue(__instance, "UpperTorso");
+            jointTorsoLowerProperty?.SetValue(__instance, "LowerTorso");
+
+            // Continue with the original Initialize method
+            return true;
+        }
+    }
+
 }
