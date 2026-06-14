@@ -1,0 +1,2350 @@
+[
+    {
+        "file": "kemono:shapes/entity/kemono/main/kemono0.json",
+        "op": "replace",
+        "path": "/elements",
+        "value": [
+		{
+			"name": "b_Root",
+			"from": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"to": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"rotationOrigin": [
+				8.0,
+				0.0,
+				8.0
+			],
+			"faces": {},
+			"children": [
+				{
+					"name": "LowerTorso",
+					"from": [
+						6.0,
+						15.0,
+						5.2
+					],
+					"to": [
+						11.0,
+						20.0,
+						11.2
+					],
+					"rotationOrigin": [
+						8.0,
+						15.0,
+						8.2
+					],
+					"rotationZ": 3.0,
+					"faces": {
+						"north": {
+							"texture": "#main",
+							"uv": [
+								82.0,
+								20.0,
+								92.0,
+								30.0
+							],
+							"autoUv": false
+						},
+						"east": {
+							"texture": "#main",
+							"uv": [
+								114.0,
+								20.0,
+								126.0,
+								30.0
+							],
+							"autoUv": false
+						},
+						"south": {
+							"texture": "#main",
+							"uv": [
+								104.0,
+								20.0,
+								114.0,
+								30.0
+							],
+							"autoUv": false
+						},
+						"west": {
+							"texture": "#main",
+							"uv": [
+								92.0,
+								20.0,
+								104.0,
+								30.0
+							],
+							"autoUv": false
+						},
+						"up": {
+							"texture": "#main",
+							"uv": [
+								68.0,
+								10.0,
+								80.0,
+								20.0
+							],
+							"rotation": 90,
+							"autoUv": false
+						},
+						"down": {
+							"texture": "#main",
+							"uv": [
+								80.0,
+								30.0,
+								68.0,
+								20.0
+							],
+							"rotation": 270,
+							"autoUv": false
+						}
+					},
+					"children": [
+						{
+							"name": "UpperTorso",
+							"from": [
+								0.0,
+								4.3,
+								-0.1
+							],
+							"to": [
+								5.0,
+								9.3,
+								6.1
+							],
+							"rotationOrigin": [
+								2.0,
+								5.0,
+								3.0
+							],
+							"rotationZ": -6.0,
+							"faces": {
+								"north": {
+									"texture": "#main",
+									"uv": [
+										82.0,
+										10.0,
+										92.0,
+										20.0
+									],
+									"autoUv": false
+								},
+								"east": {
+									"texture": "#main",
+									"uv": [
+										114.0,
+										10.0,
+										126.0,
+										20.0
+									],
+									"autoUv": false
+								},
+								"south": {
+									"texture": "#main",
+									"uv": [
+										104.0,
+										10.0,
+										114.0,
+										20.0
+									],
+									"autoUv": false
+								},
+								"west": {
+									"texture": "#main",
+									"uv": [
+										92.0,
+										10.0,
+										104.0,
+										20.0
+									],
+									"autoUv": false
+								},
+								"up": {
+									"texture": "#main",
+									"uv": [
+										92.0,
+										0.0,
+										104.0,
+										10.0
+									],
+									"rotation": 90,
+									"autoUv": false
+								},
+								"down": {
+									"texture": "#main",
+									"uv": [
+										80.0,
+										20.0,
+										68.0,
+										10.0
+									],
+									"rotation": 270,
+									"autoUv": false
+								}
+							},
+							"children": [
+								{
+									"name": "UpperArmL",
+									"from": [
+										1.0,
+										-2.1,
+										5.4
+									],
+									"to": [
+										4.0,
+										4.9,
+										7.4
+									],
+									"rotationOrigin": [
+										2.0,
+										4.7,
+										5.2
+									],
+									"rotationX": -10.0,
+									"rotationZ": 7.0,
+									"faces": {
+										"north": {
+											"texture": "#main",
+											"uv": [
+												84.0,
+												83.0,
+												90.0,
+												97.0
+											],
+											"autoUv": false
+										},
+										"east": {
+											"texture": "#main",
+											"uv": [
+												100.0,
+												83.0,
+												104.0,
+												97.0
+											],
+											"autoUv": false
+										},
+										"south": {
+											"texture": "#main",
+											"uv": [
+												94.0,
+												83.0,
+												100.0,
+												97.0
+											],
+											"autoUv": false
+										},
+										"west": {
+											"texture": "#main",
+											"uv": [
+												90.0,
+												83.0,
+												94.0,
+												97.0
+											],
+											"autoUv": false
+										},
+										"up": {
+											"texture": "#main",
+											"uv": [
+												90.0,
+												77.0,
+												94.0,
+												83.0
+											],
+											"rotation": 90,
+											"autoUv": false
+										},
+										"down": {
+											"texture": "#main",
+											"uv": [
+												94.0,
+												103.0,
+												90.0,
+												97.0
+											],
+											"rotation": 270,
+											"autoUv": false
+										}
+									},
+									"children": [
+										{
+											"name": "LowerArmL",
+											"from": [
+												0.2,
+												-7.3,
+												-0.1
+											],
+											"to": [
+												2.7,
+												0.7,
+												1.9
+											],
+											"rotationOrigin": [
+												1.4,
+												0.7,
+												0.9
+											],
+											"rotationX": 8.0,
+											"rotationZ": -6.0,
+											"faces": {
+												"north": {
+													"texture": "#main",
+													"uv": [
+														85.0,
+														103.0,
+														90.0,
+														119.0
+													],
+													"autoUv": false
+												},
+												"east": {
+													"texture": "#main",
+													"uv": [
+														99.0,
+														103.0,
+														103.0,
+														119.0
+													],
+													"autoUv": false
+												},
+												"south": {
+													"texture": "#main",
+													"uv": [
+														94.0,
+														103.0,
+														99.0,
+														119.0
+													],
+													"autoUv": false
+												},
+												"west": {
+													"texture": "#main",
+													"uv": [
+														90.0,
+														103.0,
+														94.0,
+														119.0
+													],
+													"autoUv": false
+												},
+												"up": {
+													"texture": "#main",
+													"uv": [
+														90.0,
+														98.0,
+														94.0,
+														103.0
+													],
+													"rotation": 90,
+													"autoUv": false
+												},
+												"down": {
+													"texture": "#main",
+													"uv": [
+														94.0,
+														124.0,
+														90.0,
+														119.0
+													],
+													"rotation": 270,
+													"autoUv": false
+												}
+											},
+											"children": [
+												{
+													"name": "ItemAnchorL",
+													"from": [
+														1.5,
+														0.5,
+														1.0
+													],
+													"to": [
+														1.5,
+														0.5,
+														1.0
+													],
+													"rotationOrigin": [
+														1.0,
+														1.0,
+														1.0
+													],
+													"faces": {},
+													"attachmentpoints": [
+														{
+															"code": "LeftHand",
+															"posX": "1.0",
+															"posY": "1.0",
+															"posZ": "1.0",
+															"rotationX": "0.0",
+															"rotationY": "180.0",
+															"rotationZ": "0.0"
+														}
+													]
+												}
+											]
+										},
+										{
+											"name": "ShoulderAttachment",
+											"from": [
+												3.0,
+												7.0,
+												2.0
+											],
+											"to": [
+												3.0,
+												7.0,
+												2.0
+											],
+											"rotationOrigin": [
+												3.0,
+												7.0,
+												2.0
+											],
+											"faces": {
+												"north": {
+													"texture": "#main",
+													"uv": [
+														0.0,
+														0.5,
+														0.5,
+														1.0
+													]
+												},
+												"east": {
+													"texture": "#main",
+													"uv": [
+														0.5,
+														0.5,
+														1.0,
+														1.0
+													]
+												},
+												"south": {
+													"texture": "#main",
+													"uv": [
+														1.0,
+														0.5,
+														1.5,
+														1.0
+													]
+												},
+												"west": {
+													"texture": "#main",
+													"uv": [
+														1.5,
+														0.5,
+														2.0,
+														1.0
+													]
+												},
+												"up": {
+													"texture": "#main",
+													"uv": [
+														0.0,
+														0.0,
+														0.5,
+														0.5
+													]
+												},
+												"down": {
+													"texture": "#main",
+													"uv": [
+														0.5,
+														0.0,
+														1.0,
+														0.5
+													]
+												}
+											}
+										}
+									]
+								},
+								{
+									"name": "UpperArmR",
+									"from": [
+										1.0,
+										-2.1,
+										-1.2
+									],
+									"to": [
+										4.0,
+										4.9,
+										0.8
+									],
+									"rotationOrigin": [
+										2.0,
+										4.7,
+										0.8
+									],
+									"rotationX": 10.0,
+									"rotationZ": 7.0,
+									"faces": {
+										"north": {
+											"texture": "#main",
+											"uv": [
+												66.0,
+												83.0,
+												72.0,
+												97.0
+											],
+											"autoUv": false
+										},
+										"east": {
+											"texture": "#main",
+											"uv": [
+												62.0,
+												83.0,
+												66.0,
+												97.0
+											],
+											"autoUv": false
+										},
+										"south": {
+											"texture": "#main",
+											"uv": [
+												76.0,
+												83.0,
+												82.0,
+												97.0
+											],
+											"autoUv": false
+										},
+										"west": {
+											"texture": "#main",
+											"uv": [
+												72.0,
+												83.0,
+												76.0,
+												97.0
+											],
+											"autoUv": false
+										},
+										"up": {
+											"texture": "#main",
+											"uv": [
+												72.0,
+												77.0,
+												76.0,
+												83.0
+											],
+											"rotation": 90,
+											"autoUv": false
+										},
+										"down": {
+											"texture": "#main",
+											"uv": [
+												76.0,
+												103.0,
+												72.0,
+												97.0
+											],
+											"rotation": 270,
+											"autoUv": false
+										}
+									},
+									"children": [
+										{
+											"name": "LowerArmR",
+											"from": [
+												0.1,
+												-7.3,
+												0.1
+											],
+											"to": [
+												2.6,
+												0.7,
+												2.1
+											],
+											"rotationOrigin": [
+												1.3,
+												0.7,
+												1.1
+											],
+											"rotationX": -8.0,
+											"rotationZ": -6.0,
+											"faces": {
+												"north": {
+													"texture": "#main",
+													"uv": [
+														67.0,
+														103.0,
+														72.0,
+														119.0
+													],
+													"autoUv": false
+												},
+												"east": {
+													"texture": "#main",
+													"uv": [
+														63.0,
+														103.0,
+														67.0,
+														119.0
+													],
+													"autoUv": false
+												},
+												"south": {
+													"texture": "#main",
+													"uv": [
+														76.0,
+														103.0,
+														81.0,
+														119.0
+													],
+													"autoUv": false
+												},
+												"west": {
+													"texture": "#main",
+													"uv": [
+														72.0,
+														103.0,
+														76.0,
+														119.0
+													],
+													"autoUv": false
+												},
+												"up": {
+													"texture": "#main",
+													"uv": [
+														72.0,
+														98.0,
+														76.0,
+														103.0
+													],
+													"rotation": 90,
+													"autoUv": false
+												},
+												"down": {
+													"texture": "#main",
+													"uv": [
+														76.0,
+														124.0,
+														72.0,
+														119.0
+													],
+													"rotation": 270,
+													"autoUv": false
+												}
+											},
+											"children": [
+												{
+													"name": "ItemAnchor",
+													"from": [
+														1.5,
+														0.5,
+														1.0
+													],
+													"to": [
+														1.5,
+														0.5,
+														1.0
+													],
+													"rotationOrigin": [
+														1.0,
+														1.0,
+														1.0
+													],
+													"faces": {},
+													"attachmentpoints": [
+														{
+															"code": "RightHand",
+															"posX": "0.0",
+															"posY": "0.0",
+															"posZ": "0.0",
+															"rotationX": "0.0",
+															"rotationY": "180.0",
+															"rotationZ": "0.0"
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "UpperButtons",
+									"from": [
+										-0.1,
+										0.0,
+										2.3
+									],
+									"to": [
+										-0.1,
+										0.0,
+										2.3
+									],
+									"rotationOrigin": [
+										-0.1,
+										5.0,
+										2.8
+									],
+									"faces": {
+										"east": {
+											"texture": "#null",
+											"uv": [
+												0.0,
+												1.0,
+												1.0,
+												11.0
+											],
+											"autoUv": false
+										},
+										"west": {
+											"texture": "#null",
+											"uv": [
+												0.0,
+												0.0,
+												3.0,
+												10.0
+											],
+											"autoUv": false
+										},
+										"up": {
+											"texture": "#null",
+											"uv": [
+												0.0,
+												0.0,
+												0.0,
+												1.0
+											],
+											"rotation": 180,
+											"autoUv": false
+										}
+									}
+								},
+								{
+									"name": "UpperBackAttachment",
+									"from": [
+										5.5,
+										2.0,
+										2.8
+									],
+									"to": [
+										5.5,
+										2.0,
+										2.8
+									],
+									"rotationOrigin": [
+										5.5,
+										2.0,
+										2.8
+									],
+									"faces": {}
+								},
+								{
+									"name": "b_Neck",
+									"from": [
+										2.9482,
+										3.8188,
+										2.9
+									],
+									"to": [
+										2.9482,
+										3.8188,
+										2.9
+									],
+									"rotationOrigin": [
+										2.9482,
+										3.8188,
+										2.9
+									],
+									"rotationZ": 96.6506,
+									"faces": {},
+									"children": [
+										{
+											"name": "Neck",
+											"from": [
+												-0.1062,
+												1.4958,
+												-1.5
+											],
+											"to": [
+												-0.1062,
+												1.4958,
+												-1.5
+											],
+											"rotationOrigin": [
+												-0.1062,
+												1.4958,
+												-1.5
+											],
+											"rotationZ": -84.6506,
+											"faces": {}
+										},
+										{
+                                                "name": "b_Head",
+                                                "from": [
+                                                    2.14426088,
+                                                    0.0,
+                                                    -0.0
+                                                ],
+                                                "to": [
+                                                    2.14426088,
+                                                    0.0,
+                                                    -0.0
+                                                ],
+                                                "rotationOrigin": [
+                                                    2.14426088,
+                                                    0.0,
+                                                    -0.0
+                                                ],
+                                                "rotationX": -1.453e-05,
+                                                "rotationY": -1.363e-05,
+                                                "rotationZ": -93.65060884,
+                                                "faces": {
+                                                    "north": {
+                                                        "texture": "#null",
+                                                        "uv": [
+                                                            0.0,
+                                                            0.0,
+                                                            0.0,
+                                                            0.0
+                                                        ],
+                                                        "enabled": false
+                                                    },
+                                                    "east": {
+                                                        "texture": "#null",
+                                                        "uv": [
+                                                            0.0,
+                                                            0.0,
+                                                            0.0,
+                                                            0.0
+                                                        ],
+                                                        "enabled": false
+                                                    },
+                                                    "south": {
+                                                        "texture": "#null",
+                                                        "uv": [
+                                                            0.0,
+                                                            0.0,
+                                                            0.0,
+                                                            0.0
+                                                        ],
+                                                        "enabled": false
+                                                    },
+                                                    "west": {
+                                                        "texture": "#null",
+                                                        "uv": [
+                                                            0.0,
+                                                            0.0,
+                                                            0.0,
+                                                            0.0
+                                                        ],
+                                                        "enabled": false
+                                                    },
+                                                    "up": {
+                                                        "texture": "#null",
+                                                        "uv": [
+                                                            0.0,
+                                                            0.0,
+                                                            0.0,
+                                                            0.0
+                                                        ],
+                                                        "enabled": false
+                                                    },
+                                                    "down": {
+                                                        "texture": "#null",
+                                                        "uv": [
+                                                            0.0,
+                                                            0.0,
+                                                            0.0,
+                                                            0.0
+                                                        ],
+                                                        "enabled": false
+                                                    }
+                                                },
+                                                "children": [
+                                                    {
+                                                        "name": "Hair",
+                                                        "from": [
+                                                            -1.56782901,
+                                                            1.94534862,
+                                                            -0.60000068
+                                                        ],
+                                                        "to": [
+                                                            -1.56782901,
+                                                            1.94534862,
+                                                            -0.60000068
+                                                        ],
+                                                        "rotationOrigin": [
+                                                            -1.56782901,
+                                                            1.94534862,
+                                                            -0.60000068
+                                                        ],
+                                                        "rotationX": -1.366e-05,
+                                                        "rotationY": 0.0,
+                                                        "rotationZ": 0.0,
+                                                        "faces": {
+                                                            "north": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "east": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "south": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "west": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "up": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "down": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            }
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "Hair tile upper part",
+                                                        "from": [
+                                                            -0.49070835,
+                                                            5.48509598,
+                                                            -0.3000015
+                                                        ],
+                                                        "to": [
+                                                            -0.49070835,
+                                                            5.48509598,
+                                                            -0.3000015
+                                                        ],
+                                                        "rotationOrigin": [
+                                                            -0.49070835,
+                                                            5.48509598,
+                                                            -0.3000015
+                                                        ],
+                                                        "rotationX": -1.366e-05,
+                                                        "rotationY": 0.0,
+                                                        "rotationZ": 1.99997949,
+                                                        "faces": {
+                                                            "north": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "east": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "south": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "west": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "up": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "down": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            }
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "Head",
+                                                        "from": [
+                                                            -3.14717221,
+                                                            -0.00108397,
+                                                            -2.50000024
+                                                        ],
+                                                        "to": [
+                                                            -3.14717221,
+                                                            -0.00108397,
+                                                            -2.50000024
+                                                        ],
+                                                        "rotationOrigin": [
+                                                            -3.14717221,
+                                                            -0.00108397,
+                                                            -2.50000024
+                                                        ],
+                                                        "rotationX": -1.366e-05,
+                                                        "rotationY": 0.0,
+                                                        "rotationZ": 0.0,
+                                                        "faces": {
+                                                            "north": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "east": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "south": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "west": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "up": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "down": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            }
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "Ponytail 2",
+                                                        "from": [
+                                                            2.21589637,
+                                                            2.47772217,
+                                                            -7.7e-07
+                                                        ],
+                                                        "to": [
+                                                            2.21589637,
+                                                            2.47772217,
+                                                            -7.7e-07
+                                                        ],
+                                                        "rotationOrigin": [
+                                                            2.21589637,
+                                                            2.47772217,
+                                                            -7.7e-07
+                                                        ],
+                                                        "rotationX": -9.67e-06,
+                                                        "rotationY": -1.306e-05,
+                                                        "rotationZ": -73.00001683,
+                                                        "faces": {
+                                                            "north": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "east": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "south": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "west": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "up": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "down": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            }
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "Ponytail1",
+                                                        "from": [
+                                                            2.7121017,
+                                                            2.59511161,
+                                                            -0.50000077
+                                                        ],
+                                                        "to": [
+                                                            2.7121017,
+                                                            2.59511161,
+                                                            -0.50000077
+                                                        ],
+                                                        "rotationOrigin": [
+                                                            2.7121017,
+                                                            2.59511161,
+                                                            -0.50000077
+                                                        ],
+                                                        "rotationX": -1.366e-05,
+                                                        "rotationY": 0.0,
+                                                        "rotationZ": 1.99995239,
+                                                        "faces": {
+                                                            "north": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "east": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "south": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "west": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "up": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "down": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            }
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "b_EarL",
+                                                        "from": [
+                                                            -0.35300529,
+                                                            4.62183046,
+                                                            2.25521445
+                                                        ],
+                                                        "to": [
+                                                            -0.35300529,
+                                                            4.62183046,
+                                                            2.25521445
+                                                        ],
+                                                        "rotationOrigin": [
+                                                            -0.35300529,
+                                                            4.62183046,
+                                                            2.25521445
+                                                        ],
+                                                        "rotationX": -1.366e-05,
+                                                        "rotationY": 0.0,
+                                                        "rotationZ": 0.0,
+                                                        "faces": {
+                                                            "north": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "east": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "south": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "west": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "up": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "down": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            }
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "b_EarR",
+                                                        "from": [
+                                                            -0.35300529,
+                                                            4.62182951,
+                                                            -2.25521684
+                                                        ],
+                                                        "to": [
+                                                            -0.35300529,
+                                                            4.62182951,
+                                                            -2.25521684
+                                                        ],
+                                                        "rotationOrigin": [
+                                                            -0.35300529,
+                                                            4.62182951,
+                                                            -2.25521684
+                                                        ],
+                                                        "rotationX": -1.366e-05,
+                                                        "rotationY": 0.0,
+                                                        "rotationZ": 0.0,
+                                                        "faces": {
+                                                            "north": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "east": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "south": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "west": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "up": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "down": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            }
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "b_Jaw",
+                                                        "from": [
+                                                            -1.97462559,
+                                                            0.78660774,
+                                                            -1.9e-07
+                                                        ],
+                                                        "to": [
+                                                            -1.97462559,
+                                                            0.78660774,
+                                                            -1.9e-07
+                                                        ],
+                                                        "rotationOrigin": [
+                                                            -1.97462559,
+                                                            0.78660774,
+                                                            -1.9e-07
+                                                        ],
+                                                        "rotationX": 3.597e-05,
+                                                        "rotationY": 0.0,
+                                                        "rotationZ": 180.00000501,
+                                                        "faces": {
+                                                            "north": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "east": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "south": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "west": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "up": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "down": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            }
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "b_EyeL",
+                                                        "from": [
+                                                            -0.35300529,
+                                                            2.04635835,
+                                                            1.45521522
+                                                        ],
+                                                        "to": [
+                                                            -0.35300529,
+                                                            2.04635835,
+                                                            1.45521522
+                                                        ],
+                                                        "rotationOrigin": [
+                                                            -0.35300529,
+                                                            2.04635835,
+                                                            1.45521522
+                                                        ],
+                                                        "rotationX": -1.366e-05,
+                                                        "rotationY": 0.0,
+                                                        "rotationZ": 0.0,
+                                                        "faces": {
+                                                            "north": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "east": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "south": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "west": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "up": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "down": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            }
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "b_EyeR",
+                                                        "from": [
+                                                            -0.35300529,
+                                                            2.04635787,
+                                                            -1.45521617
+                                                        ],
+                                                        "to": [
+                                                            -0.35300529,
+                                                            2.04635787,
+                                                            -1.45521617
+                                                        ],
+                                                        "rotationOrigin": [
+                                                            -0.35300529,
+                                                            2.04635787,
+                                                            -1.45521617
+                                                        ],
+                                                        "rotationX": -1.366e-05,
+                                                        "rotationY": 0.0,
+                                                        "rotationZ": 0.0,
+                                                        "faces": {
+                                                            "north": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "east": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "south": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "west": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "up": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            },
+                                                            "down": {
+                                                                "texture": "#null",
+                                                                "uv": [
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0
+                                                                ],
+                                                                "enabled": false
+                                                            }
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ],
+                                                "attachmentpoints": [
+                                                    {
+                                                        "code": "Eyes",
+                                                        "posX": -2.12402606010437,
+                                                        "posY": 3.4234962463378906,
+                                                        "posZ": -8.120381380649633e-07,
+                                                        "rotationX": -0.0,
+                                                        "rotationY": -89.999995674289,
+                                                        "rotationZ": 1.3340705012768222e-05
+                                                    }
+                                                ]
+                                            }
+									]
+								},
+								{
+									"name": "b_Bust",
+									"from": [
+										0.2362,
+										1.0375,
+										2.9
+									],
+									"to": [
+										0.2362,
+										1.0375,
+										2.9
+									],
+									"rotationOrigin": [
+										0.2362,
+										1.0375,
+										2.9
+									],
+									"rotationZ": 3.0,
+									"faces": {}
+								},
+								{
+									"name": "b_BreastR",
+									"from": [
+										0.2362,
+										1.0375,
+										1.159
+									],
+									"to": [
+										0.2362,
+										1.0375,
+										1.159
+									],
+									"rotationOrigin": [
+										0.2362,
+										1.0375,
+										1.159
+									],
+									"rotationZ": 3.0,
+									"faces": {}
+								},
+								{
+									"name": "b_BreastL",
+									"from": [
+										0.2362,
+										1.0375,
+										4.641
+									],
+									"to": [
+										0.2362,
+										1.0375,
+										4.641
+									],
+									"rotationOrigin": [
+										0.2362,
+										1.0375,
+										4.641
+									],
+									"rotationZ": 3.0,
+									"faces": {}
+								},
+								{
+									"name": "b_WingMainR",
+									"from": [
+										4.8697,
+										3.7068,
+										1.159
+									],
+									"to": [
+										4.8697,
+										3.7068,
+										1.159
+									],
+									"rotationOrigin": [
+										4.8697,
+										3.7068,
+										1.159
+									],
+									"rotationZ": 3.0,
+									"faces": {}
+								},
+								{
+									"name": "b_WingMainL",
+									"from": [
+										4.8697,
+										3.7068,
+										4.641
+									],
+									"to": [
+										4.8697,
+										3.7068,
+										4.641
+									],
+									"rotationOrigin": [
+										4.8697,
+										3.7068,
+										4.641
+									],
+									"rotationZ": 3.0,
+									"faces": {}
+								}
+							],
+							"attachmentpoints": [
+								{
+									"code": "Back",
+									"posX": "5.0",
+									"posY": "2.9999999403953552",
+									"posZ": "2.9999998062849045",
+									"rotationX": "0.0",
+									"rotationY": "0.0",
+									"rotationZ": "0.0"
+								}
+							]
+						},
+						{
+							"name": "LowerBackAttachment",
+							"from": [
+								5.4,
+								1.4,
+								3.0
+							],
+							"to": [
+								5.4,
+								1.4,
+								3.0
+							],
+							"rotationOrigin": [
+								5.4,
+								1.4,
+								3.0
+							],
+							"faces": {
+								"north": {
+									"texture": "#null",
+									"uv": [
+										0.0,
+										0.5,
+										0.5,
+										1.0
+									]
+								},
+								"east": {
+									"texture": "#null",
+									"uv": [
+										0.5,
+										0.5,
+										1.0,
+										1.0
+									]
+								},
+								"south": {
+									"texture": "#null",
+									"uv": [
+										1.0,
+										0.5,
+										1.5,
+										1.0
+									]
+								},
+								"west": {
+									"texture": "#null",
+									"uv": [
+										1.5,
+										0.5,
+										2.0,
+										1.0
+									]
+								},
+								"up": {
+									"texture": "#null",
+									"uv": [
+										0.0,
+										0.0,
+										0.5,
+										0.5
+									]
+								},
+								"down": {
+									"texture": "#null",
+									"uv": [
+										0.5,
+										0.0,
+										1.0,
+										0.5
+									]
+								}
+							}
+						},
+						{
+							"name": "FrontShirtTile",
+							"from": [
+								0.0,
+								-6.0,
+								0.0
+							],
+							"to": [
+								0.0,
+								-6.0,
+								0.0
+							],
+							"rotationOrigin": [
+								0.0,
+								0.0,
+								3.0
+							],
+							"rotationZ": -3.0,
+							"faces": {
+								"north": {
+									"texture": "#null",
+									"uv": [
+										90.0,
+										30.0,
+										92.0,
+										42.0
+									],
+									"autoUv": false
+								},
+								"south": {
+									"texture": "#null",
+									"uv": [
+										104.0,
+										30.0,
+										106.0,
+										42.0
+									],
+									"autoUv": false
+								},
+								"west": {
+									"texture": "#null",
+									"uv": [
+										92.0,
+										30.0,
+										104.0,
+										42.0
+									],
+									"autoUv": false
+								}
+							}
+						},
+						{
+							"name": "BackShirtTile",
+							"from": [
+								4.0,
+								-5.9,
+								0.0
+							],
+							"to": [
+								4.0,
+								-5.9,
+								0.0
+							],
+							"rotationOrigin": [
+								4.0,
+								0.1,
+								3.0
+							],
+							"rotationZ": -5.0,
+							"faces": {
+								"north": {
+									"texture": "#null",
+									"uv": [
+										126.0,
+										30.0,
+										128.0,
+										42.0
+									],
+									"autoUv": false
+								},
+								"east": {
+									"texture": "#null",
+									"uv": [
+										114.0,
+										30.0,
+										126.0,
+										42.0
+									],
+									"autoUv": false
+								},
+								"south": {
+									"texture": "#null",
+									"uv": [
+										112.0,
+										30.0,
+										114.0,
+										42.0
+									],
+									"autoUv": false
+								}
+							}
+						},
+						{
+							"name": "LowerButtons",
+							"from": [
+								-0.1,
+								-1.5,
+								2.2
+							],
+							"to": [
+								-0.1,
+								-1.5,
+								2.2
+							],
+							"rotationOrigin": [
+								-0.1,
+								4.0,
+								3.0
+							],
+							"faces": {
+								"west": {
+									"texture": "#null",
+									"uv": [
+										2.0,
+										0.0,
+										2.5,
+										0.5
+									]
+								}
+							}
+						},
+						{
+							"name": "b_Tail0",
+							"from": [
+								4.4908,
+								2.725,
+								2.8
+							],
+							"to": [
+								4.4908,
+								2.725,
+								2.8
+							],
+							"rotationOrigin": [
+								4.4908,
+								2.725,
+								2.8
+							],
+							"rotationZ": -3.0,
+							"faces": {},
+							"children": [
+								{
+									"name": "b_Tail1",
+									"from": [
+										2.6722,
+										0.0,
+										0.0
+									],
+									"to": [
+										2.6722,
+										0.0,
+										0.0
+									],
+									"rotationOrigin": [
+										2.6722,
+										0.0,
+										0.0
+									],
+									"faces": {},
+									"children": [
+										{
+											"name": "b_Tail2",
+											"from": [
+												3.5043,
+												0.0,
+												0.0
+											],
+											"to": [
+												3.5043,
+												0.0,
+												0.0
+											],
+											"rotationOrigin": [
+												3.5043,
+												0.0,
+												0.0
+											],
+											"faces": {},
+											"children": [
+												{
+													"name": "b_Tail3",
+													"from": [
+														3.992,
+														0.0,
+														0.0
+													],
+													"to": [
+														3.992,
+														0.0,
+														0.0
+													],
+													"rotationOrigin": [
+														3.992,
+														0.0,
+														0.0
+													],
+													"faces": {},
+													"children": [
+														{
+															"name": "b_Tail4",
+															"from": [
+																3.8508,
+																0.0,
+																0.0
+															],
+															"to": [
+																3.8508,
+																0.0,
+																0.0
+															],
+															"rotationOrigin": [
+																3.8508,
+																0.0,
+																0.0
+															],
+															"faces": {},
+															"children": [
+																{
+																	"name": "b_Tail5",
+																	"from": [
+																		3.1034,
+																		0.0,
+																		0.0
+																	],
+																	"to": [
+																		3.1034,
+																		0.0,
+																		0.0
+																	],
+																	"rotationOrigin": [
+																		3.1034,
+																		0.0,
+																		0.0
+																	],
+																	"faces": {}
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "b_FootUpperR",
+							"from": [
+								2.2242,
+								0.4574,
+								1.2847
+							],
+							"to": [
+								2.2242,
+								0.4574,
+								1.2847
+							],
+							"rotationOrigin": [
+								2.2242,
+								0.4574,
+								1.2847
+							],
+							"rotationX": 88.7976,
+							"rotationY": 85.0932,
+							"rotationZ": -175.7093,
+							"faces": {},
+							"children": [
+								{
+									"name": "FootAttachmentR",
+									"from": [
+										1.5341,
+										1.885,
+										0.161
+									],
+									"to": [
+										1.5341,
+										1.885,
+										0.161
+									],
+									"rotationOrigin": [
+										1.5341,
+										1.885,
+										0.161
+									],
+									"rotationX": 89.6409,
+									"rotationY": -0.1033,
+									"rotationZ": 89.8945,
+									"faces": {}
+								},
+								{
+									"name": "b_FootLowerR",
+									"from": [
+										6.0404,
+										0.0,
+										0.0
+									],
+									"to": [
+										6.0404,
+										0.0,
+										0.0
+									],
+									"rotationOrigin": [
+										6.0404,
+										0.0,
+										0.0
+									],
+									"rotationX": -0.2051,
+									"rotationY": -1.8974,
+									"rotationZ": -1.6871,
+									"faces": {},
+									"children": [
+										{
+											"name": "ButtonsL",
+											"from": [
+												9.49,
+												0.0001,
+												-1.835
+											],
+											"to": [
+												9.49,
+												0.0001,
+												-1.835
+											],
+											"rotationOrigin": [
+												9.49,
+												0.0001,
+												-1.835
+											],
+											"rotationX": 89.7728,
+											"rotationY": -0.4099,
+											"rotationZ": 90.0027,
+											"faces": {}
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "b_FootUpperL",
+							"from": [
+								2.2242,
+								0.4574,
+								4.3153
+							],
+							"to": [
+								2.2242,
+								0.4574,
+								4.3153
+							],
+							"rotationOrigin": [
+								2.2242,
+								0.4574,
+								4.3153
+							],
+							"rotationX": 88.8057,
+							"rotationY": 85.1041,
+							"rotationZ": 178.0972,
+							"faces": {},
+							"children": [
+								{
+									"name": "FootAttachmentL",
+									"from": [
+										1.5129,
+										-1.685,
+										0.1665
+									],
+									"to": [
+										1.5129,
+										-1.685,
+										0.1665
+									],
+									"rotationOrigin": [
+										1.5129,
+										-1.685,
+										0.1665
+									],
+									"rotationX": 90.1541,
+									"rotationY": 0.1033,
+									"rotationZ": 89.8933,
+									"faces": {}
+								},
+								{
+									"name": "b_FootLowerL",
+									"from": [
+										6.0404,
+										0.0,
+										0.0
+									],
+									"to": [
+										6.0404,
+										0.0,
+										0.0
+									],
+									"rotationOrigin": [
+										6.0404,
+										0.0,
+										0.0
+									],
+									"rotationY": -1.8974,
+									"rotationZ": 1.6871,
+									"faces": {},
+									"children": [
+										{
+											"name": "ButtonsR",
+											"from": [
+												9.483,
+												-0.0002,
+												-1.8365
+											],
+											"to": [
+												9.483,
+												-0.0002,
+												-1.8365
+											],
+											"rotationOrigin": [
+												9.483,
+												-0.0002,
+												-1.8365
+											],
+											"rotationX": 90.2272,
+											"rotationY": 0.4099,
+											"rotationZ": 90.0012,
+											"faces": {}
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+    }
+]

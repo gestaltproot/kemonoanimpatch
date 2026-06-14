@@ -1,2 +1,6 @@
-kemono0.json
-horse0.json
+/kemono0.json
+/horse0.json
+bin
+obj
+kemonoanimpatch.dll
+kemonoanimpatch.pdb
