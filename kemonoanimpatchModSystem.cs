@@ -12,6 +12,9 @@ using Vintagestory.API.Server;
 using Vintagestory.API.MathTools;
 using System;
 
+/// <summary>
+/// Mod system for providing code patches to replace hardcoded bone names with vanilla-friendly ones
+/// </summary>
 namespace kemonoanimpatch
 {
     public class kemonoanimpatchModSystem : ModSystem
@@ -22,10 +25,38 @@ namespace kemonoanimpatch
         public override void Start(ICoreAPI api)
         {
             var harmony = new Harmony("kemonoanimpatch");
-            // Apply all Harmony patches in this assembly
+
+            // Manually patch the EntityKemonoPlayerShapeRenderer lambda since it's compiler-generated
+            PatchEntityKemonoPlayerShapeRendererLambda(harmony);
+
+            // Apply all other Harmony patches in this assembly
             harmony.PatchAll();
 
-            Mod.Logger.Notification("Started Kemono Animation Patch");
+            Mod.Logger.Notification("Kemono Animation Code Patches Loaded");
+        }
+
+        /// <summary>
+        /// Uses reflection to determine the internal method name for the OverrideTesselate lambda in EntityKemonoPlayerShapeRenderer
+        /// </summary>
+        /// <param name="harmony">The Harmony instance to use for patching.</param>
+        private void PatchEntityKemonoPlayerShapeRendererLambda(Harmony harmony)
+        {
+            var targetType = typeof(kemono.EntityKemonoPlayerShapeRenderer);
+            
+            // Find the lambda method by searching for methods with the naming pattern
+            var allMethods = targetType.GetMethods(System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance);
+            var lambdaMethod = allMethods.FirstOrDefault(m => m.Name.Contains("b__") && m.Name.Contains("OverrideTesselate"));
+
+            if (lambdaMethod != null)
+            {
+                var transpilerMethod = new HarmonyMethod(typeof(EntityKemonoPlayerShapeRendererOverrideTesselatePatch).GetMethod("Transpiler"));
+                harmony.Patch(lambdaMethod, transpiler: transpilerMethod);
+                Mod.Logger.Notification($"Successfully patched lambda method: {lambdaMethod.Name}");
+            }
+            else
+            {
+                Mod.Logger.Warning("Could not find the OverrideTesselate lambda method to patch");
+            }
         }
 
 
@@ -39,7 +70,10 @@ namespace kemonoanimpatch
     }
 
 
-
+    /// <summary>
+    /// Patches the constructor of KemonoPlayerHeadController to initialize the UpperTorsoPose and LowerTorsoPose fields with the new bone names
+    /// https://gitlab.com/xeth/kemono/-/blob/1db570ed3377af43493772974e954ea87abb3377/src/Model/Animation/KemonoEntityHeadController.cs @20-122
+    /// </summary>
     [HarmonyPatch(typeof(kemono.KemonoPlayerHeadController))]
     [HarmonyPatch(MethodType.Constructor)]
     [HarmonyPatch(new Type[] {typeof(IAnimationManager), typeof(EntityPlayer), typeof(Shape), typeof(string), typeof(string), typeof(string), typeof(string), typeof(string), typeof(string), typeof(EnumAxis), typeof(float), typeof(float), typeof(float)} )]
@@ -64,6 +98,10 @@ namespace kemonoanimpatch
         }
     }
 
+    /// <summary>
+    /// Replaces the OnFrame method in KemonoPlayerHeadController to avoid an unusual null reference exception on line 141 of the original code
+    /// https://gitlab.com/xeth/kemono/-/blob/1db570ed3377af43493772974e954ea87abb3377/src/Model/Animation/KemonoEntityHeadController.cs @136-177
+    /// </summary>
     [HarmonyPatch(typeof(kemono.KemonoPlayerHeadController), "OnFrame")]
     public class KemonoPlayerHeadControllerOnFramePatch
     {
@@ -155,6 +193,10 @@ namespace kemonoanimpatch
         }
     }
 
+    /// <summary>
+    /// Cleanup, no clear problems when this method is not patched for the new bone names but patching it anyway in case
+    /// https://gitlab.com/xeth/kemono/-/blob/1db570ed3377af43493772974e954ea87abb3377/src/Entity/Behavior/BehaviorKemonoSkinnable.cs @1113-1237
+    /// </summary>
     [HarmonyPatch(typeof(kemono.KemonoSkinnableModel), "Initialize")]
     public class KemonoSkinnableModelInitializePatch
     {
@@ -172,5 +214,43 @@ namespace kemonoanimpatch
             return true;
         }
     }
+
+
+    /// <summary>
+    /// Transpiler method for patching the OverrideTesselate method in EntityKemonoPlayerShapeRenderer
+    /// Required for the arms to be visible in first-person
+    /// Not called as a typical harmony patch because the method with the hardcoded strings is a lambda expression
+    /// https://gitlab.com/xeth/kemono/-/blob/1db570ed3377af43493772974e954ea87abb3377/src/EntityRenderer/EntityKemonoPlayerShapeRenderer.cs @631-664
+    /// </summary>
+    public class EntityKemonoPlayerShapeRendererOverrideTesselatePatch
+    {
+        public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator generator)
+        {
+            var codes = new List<CodeInstruction>(instructions);
+            int replacementCount = 0;
+
+            for (int i = 0; i < codes.Count; i++)
+            {
+                // Replace "b_ArmUpperL" with "UpperArmL"
+                if (codes[i].opcode == OpCodes.Ldstr && codes[i].operand is string str)
+                {
+                    if (str == "b_ArmUpperL")
+                    {
+                        codes[i].operand = "UpperArmL";
+                        replacementCount++;
+                    }
+                    // Replace "b_ArmUpperR" with "UpperArmR"
+                    else if (str == "b_ArmUpperR")
+                    {
+                        codes[i].operand = "UpperArmR";
+                        replacementCount++;
+                    }
+                }
+            }
+
+            return codes;
+        }
+    }
+
 
 }
